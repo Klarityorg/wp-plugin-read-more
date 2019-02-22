@@ -1,8 +1,8 @@
 
 .collapsed {
-  opacity: 0;
   p {
     line-height: 0;
+    opacity: 0;
 
     -webkit-transition: all 0.25s ease;
     -moz-transition: all 0.25s ease;
@@ -12,9 +12,9 @@
 }
 
 .expanded {
-  opacity: inherit;
   p {
     line-height: inherit;
+    opacity: inherit;
 
     -webkit-transition: all 0.25s ease;
     -moz-transition: all 0.25s ease;

@@ -4,7 +4,7 @@ Tags: read, show, more, less, block, gutenberg
 Requires at least: 5.0.0
 Tested up to: 5.0.3
 Requires PHP: 7.2.0
-Stable tag: 1.0.1
+Stable tag: 1.0.3
 License: MIT
 License URI: https://opensource.org/licenses/MIT
 

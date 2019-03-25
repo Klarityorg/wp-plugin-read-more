@@ -59,8 +59,8 @@ function render_read_more( $attributes ) {
     wp_enqueue_script(
         'read-more-block-handler-js',
         plugins_url('/src/block/toggle-expand.js', __DIR__),
-        [], // Dependencies, defined above.
-        true // Enqueue the script in the footer.
+        [],
+		filemtime(plugins_url('/src/block/toggle-expand.js', __DIR__))
     );
 	return (
 		'<div class="text-center">

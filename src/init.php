@@ -60,7 +60,7 @@ function render_read_more( $attributes ) {
         'read-more-block-handler-js',
         plugins_url('/src/block/toggle-expand.js', __DIR__),
         [],
-		filemtime(plugins_url('/src/block/toggle-expand.js', __DIR__))
+		filemtime(plugin_dir_path(__DIR__).'/src/block/toggle-expand.js')
     );
 	return (
 		'<div class="text-center">

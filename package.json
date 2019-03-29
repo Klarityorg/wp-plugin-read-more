@@ -1,6 +1,6 @@
 {
   "name": "klarity-read-more-block",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "private": true,
   "scripts": {
     "start": "cgb-scripts start",

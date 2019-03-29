@@ -4,7 +4,7 @@ Tags: read, show, more, less, block, gutenberg
 Requires at least: 5.0.0
 Tested up to: 5.1.0
 Requires PHP: 7.2.0
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 License: MIT
 License URI: https://opensource.org/licenses/MIT
 
@@ -26,8 +26,10 @@ If you wish to build the plugin yourself, see the "Building" section hereunder.
 3. Screenshot of collapsed read more centered aligned.
 
 == Changelog ==
+== 1.1.2 ==
+* Fix typo and styling in editor
 == 1.1.1 ==
-* Padding underneath show more button 
+* Padding underneath show more button
 = 1.0 =
 * Initial release
 

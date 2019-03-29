@@ -62,7 +62,7 @@ registerBlockType('klarity/klarity-read-more-block', {
 		    	onChange={ content => setAttributes({ contentBlock: content }) } />
 			</div>
 			<div class="preview">
-					<h5>Read more preview</h5>
+					<h5>Show more preview</h5>
 					<p dangerouslySetInnerHTML={{__html: attributes.introBlock }}/>
 			</div>
 		</div>;

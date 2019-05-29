@@ -55,7 +55,10 @@ register_block_type('klarity/klarity-read-more-block', [
 function render_read_more( $attributes ) {
     $introBlock = $attributes['introBlock'] ?? '';
     $contentBlock = $attributes['contentBlock'] ?? '';
-    $textAlignment = 'text-' . $attributes['textAlignment'] ?? 'left';
+    $textAlignment = $attributes['textAlignment'] ?? 'left';
+	// Custom Code fore read more text 2019/05/21
+	$readmore_text = $attributes['read_more'] ?? 'Show more';
+//	$readless_text = $attributes['read_less'] ?? 'Show less';
     wp_enqueue_script(
         'read-more-block-handler-js',
         plugins_url('/src/block/toggle-expand.js', __DIR__),
@@ -64,13 +67,13 @@ function render_read_more( $attributes ) {
     );
 	return (
 		'<div class="text-center">
-			<div class="read-more-wrap '. $textAlignment .'">
+			<div class="read-more-wrap text-'. $textAlignment .'">
         <p>'. $introBlock .'</p>
         <div class="read-more-target collapsed">
           <p>'. $contentBlock .'</p>
         </div>
       </div>
-			<button class="read-more-trigger" onclick="toggleExpand(this)">Show more</button>
+			<button class="read-more-trigger" data-readmore="'.esc_html($readmore_text).'" onclick="toggleExpand(this)">'.$readmore_text.'</button>
 		</div>'
 	);
 }

@@ -57,7 +57,7 @@ function render_read_more( $attributes ) {
     $contentBlock = $attributes['contentBlock'] ?? '';
     $textAlignment = $attributes['textAlignment'] ?? 'left';
 	// Custom Code fore read more text 2019/05/21
-	$readmore_text = $attributes['read_more'] ?? 'Show more';
+	$readMoreText = $attributes['read_more'] ?? 'Show more';
 //	$readless_text = $attributes['read_less'] ?? 'Show less';
     wp_enqueue_script(
         'read-more-block-handler-js',
@@ -73,7 +73,7 @@ function render_read_more( $attributes ) {
           <p>'. $contentBlock .'</p>
         </div>
       </div>
-			<button class="read-more-trigger" data-readmore="'.esc_html($readmore_text).'" onclick="toggleExpand(this)">'.$readmore_text.'</button>
+			<button class="read-more-trigger" data-readmore="'.esc_html($readMoreText).'" onclick="toggleExpand(this)">'.$readMoreText.'</button>
 		</div>'
 	);
 }
